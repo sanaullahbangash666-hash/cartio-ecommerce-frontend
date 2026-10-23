@@ -1,0 +1,6 @@
+{
+  "name": "CARTIO - Premium Sneaker & Streetwear Marketplace",
+  "description": "High-end footwear marketplace featuring dynamic color variants, full checkout, admin management, cybersecurity scanning, and data analyst dashboards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
