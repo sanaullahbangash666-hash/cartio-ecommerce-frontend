@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+
+  html, body {
+    background-color: #ffffff;
+    color: #18181b;
+    font-family: var(--font-sans);
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  /* Headings: strictly normal, non-stretchy, clean and modern */
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: var(--font-display);
+    font-stretch: 100% !important;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  .font-mono-numbers {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .font-brush {
+    font-family: 'Permanent Marker', 'Sedgwick Ave Display', cursive, sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 900;
+  }
+
+  .font-calligraphy {
+    font-family: 'Great Vibes', 'Alex Brush', cursive, sans-serif;
+    letter-spacing: 0.02em;
+    font-style: normal;
+  }
+}
+
+/* Elevation and shadow enhancements */
+.shadow-card {
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 16px 32px -4px rgba(0, 0, 0, 0.10), 0 6px 12px -2px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-sneaker-float {
+  filter: drop-shadow(0 30px 35px rgba(0, 0, 0, 0.65)) drop-shadow(0 15px 25px rgba(220, 38, 38, 0.35));
+}
+
+.shadow-red-glow {
+  box-shadow: 0 10px 30px -5px rgba(220, 38, 38, 0.5);
+}
+
+.ground-shadow {
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, rgba(220, 38, 38, 0.2) 35%, transparent 75%);
+}
+
+/* Dark Grunge Background Texture Patterns matching uploaded reference pic */
+.bg-grunge-texture {
+  background-color: #08080a;
+  background-image: url('/src/assets/images/dark_grunge_texture_1791626750389.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-carbon-pattern {
+  background-color: #08080a;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url('/src/assets/images/dark_grunge_texture_1791626750389.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-radial-vignette {
+  background: radial-gradient(ellipse at center, transparent 35%, #08080a 95%);
+}
+
+/* Animated Sneaker Levitation / Float Keyframes */
+@keyframes floatSneaker {
+  0% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-16px) rotate(-1.5deg) scale(1.02);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes shadowPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  50% {
+    transform: scale(0.85);
+    opacity: 0.45;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+}
+
+@keyframes velocityPulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes radarSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-float-sneaker {
+  animation: floatSneaker 4.5s ease-in-out infinite;
+}
+
+.animate-shadow-pulse {
+  animation: shadowPulse 4.5s ease-in-out infinite;
+}
+
+.animate-velocity-pulse {
+  animation: velocityPulse 3s ease-in-out infinite;
+}
+
+.animate-radar-spin {
+  animation: radarSpin 24s linear infinite;
+}
+
+/* Custom refined scrollbars for clean light aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f4f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
+}
