@@ -1,10 +1,10 @@
-# E-Commerce Web Application
+# CARTIO an E-Commerce Website
 
 A modern web-based e-commerce platform built to provide a simple, intuitive, and seamless online shopping experience.
 
 ## About the Project
 
-This application is designed to make online shopping convenient through a clean user interface and organized application architecture. It combines modern frontend technologies with server-side functionality to deliver a responsive web experience.
+This website is designed to make online shopping convenient through a clean user interface and organized application architecture. It combines modern frontend technologies with server-side functionality to deliver a responsive web experience.
 
 ## Technology Stack
 
