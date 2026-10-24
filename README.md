@@ -22,10 +22,6 @@ This project is a web-based e-commerce application featuring a modern frontend a
 - TypeScript
 - tsx
 
-### APIs and Integration
-- Google Gemini API (`@google/genai`)
-- dotenv for environment configuration
-
 ### Development Tools
 - npm
 - esbuild
