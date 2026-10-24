@@ -42,35 +42,6 @@ e-commerce/
 ├── tsconfig.json
 └── README.md
 
-
-## Getting Started
-
-### Prerequisites
-
-Make sure you have installed:
-- Node.js
-- npm
-
-### Installation
-
-1. Clone the repository:
-
-   bash
-   git clone YOUR_REPOSITORY_URL
-   
-
-2. Navigate to the project directory:
-
-   bash
-   cd YOUR_PROJECT_FOLDER
-   
-
-3. Install dependencies:
-
-   bash
-   npm install
-   
-
 ### Environment Configuration
 
 If your application requires environment variables, create a .env.local file in the root directory and configure the required values.
